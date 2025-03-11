@@ -30,9 +30,8 @@ load_dotenv()
 folder_path= r"dataset"
 
 llm = ChatOpenAI(
-    model='gpt-4o-mini',
-    temperature=0.1,
-    top_p=1,
+    model='gpt-4o',
+    temperature=0.2,
 )
 model_kwargs = {'device': 'cpu'}
 
@@ -127,8 +126,8 @@ def get_QA_chain():
                         # search_type="mmr", k=50 
                         search_type="similarity_score_threshold", 
                         search_kwargs={
-                            "score_threshold": 0.2,
-                            "k": 10
+                            "score_threshold": 0.1,
+                            "k": 20
                             }
                         )
         

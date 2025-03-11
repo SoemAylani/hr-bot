@@ -17,7 +17,7 @@ def get_relevant_prompts(chain,ans):
     num_of_indexs = len(ans['context'])
     for i in range(num_of_indexs):
         st.write(i+1,((ans['context'])[i]).page_content)
-        if i == 19:
+        if i == 9:
             break
        
 
