@@ -21,7 +21,7 @@ def get_relevant_prompts(chain,ans):
             break
        
 
-st.title("HR Chatbot Q&A ")
+st.title("HR Chatbot Q&A by Soem")
 # btn = st.button("Create Knowledgebase")
 # if btn:
 #     create_vector_db(folder_path)
